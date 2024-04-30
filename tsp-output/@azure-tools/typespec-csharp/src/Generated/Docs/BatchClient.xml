@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <members>
+    <member name="PatchJobScheduleAsync(string,RequestContent,int?,DateTimeOffset?,RequestContext)">
+      <example>
+This sample shows how to call PatchJobScheduleAsync.
+<code><![CDATA[
+Uri endpoint = new Uri("<https://my-service.azure.com>");
+BatchClient client = new BatchClient(endpoint);
+
+using RequestContent content = RequestContent.Create(new object());
+Response response = await client.PatchJobScheduleAsync("<jobScheduleId>", content);
+
+Console.WriteLine(response.Status);
+]]></code>
+This sample shows how to call PatchJobScheduleAsync with all parameters and request content.
+<code><![CDATA[
+Uri endpoint = new Uri("<https://my-service.azure.com>");
+BatchClient client = new BatchClient(endpoint);
+
+using RequestContent content = RequestContent.Create(new
+{
+    id = "<id>",
+});
+Response response = await client.PatchJobScheduleAsync("<jobScheduleId>", content, timeOutInSeconds: 1234, ocpDate: DateTimeOffset.Parse("Tue, 10 May 2022 18:57:31 GMT"));
+
+Console.WriteLine(response.Status);
+]]></code></example>
+    </member>
+    <member name="PatchJobSchedule(string,RequestContent,int?,DateTimeOffset?,RequestContext)">
+      <example>
+This sample shows how to call PatchJobSchedule.
+<code><![CDATA[
+Uri endpoint = new Uri("<https://my-service.azure.com>");
+BatchClient client = new BatchClient(endpoint);
+
+using RequestContent content = RequestContent.Create(new object());
+Response response = client.PatchJobSchedule("<jobScheduleId>", content);
+
+Console.WriteLine(response.Status);
+]]></code>
+This sample shows how to call PatchJobSchedule with all parameters and request content.
+<code><![CDATA[
+Uri endpoint = new Uri("<https://my-service.azure.com>");
+BatchClient client = new BatchClient(endpoint);
+
+using RequestContent content = RequestContent.Create(new
+{
+    id = "<id>",
+});
+Response response = client.PatchJobSchedule("<jobScheduleId>", content, timeOutInSeconds: 1234, ocpDate: DateTimeOffset.Parse("Tue, 10 May 2022 18:57:31 GMT"));
+
+Console.WriteLine(response.Status);
+]]></code></example>
+    </member>
+    <member name="ReplaceJobScheduleAsync(string,BatchJobSchedule,int?,DateTimeOffset?,CancellationToken)">
+      <example>
+This sample shows how to call ReplaceJobScheduleAsync.
+<code><![CDATA[
+Uri endpoint = new Uri("<https://my-service.azure.com>");
+BatchClient client = new BatchClient(endpoint);
+
+BatchJobSchedule jobSchedule = new BatchJobSchedule();
+Response response = await client.ReplaceJobScheduleAsync("<jobScheduleId>", jobSchedule);
+]]></code>
+This sample shows how to call ReplaceJobScheduleAsync with all parameters.
+<code><![CDATA[
+Uri endpoint = new Uri("<https://my-service.azure.com>");
+BatchClient client = new BatchClient(endpoint);
+
+BatchJobSchedule jobSchedule = new BatchJobSchedule();
+Response response = await client.ReplaceJobScheduleAsync("<jobScheduleId>", jobSchedule, timeOutInSeconds: 1234, ocpDate: DateTimeOffset.Parse("Tue, 10 May 2022 18:57:31 GMT"));
+]]></code></example>
+    </member>
+    <member name="ReplaceJobSchedule(string,BatchJobSchedule,int?,DateTimeOffset?,CancellationToken)">
+      <example>
+This sample shows how to call ReplaceJobSchedule.
+<code><![CDATA[
+Uri endpoint = new Uri("<https://my-service.azure.com>");
+BatchClient client = new BatchClient(endpoint);
+
+BatchJobSchedule jobSchedule = new BatchJobSchedule();
+Response response = client.ReplaceJobSchedule("<jobScheduleId>", jobSchedule);
+]]></code>
+This sample shows how to call ReplaceJobSchedule with all parameters.
+<code><![CDATA[
+Uri endpoint = new Uri("<https://my-service.azure.com>");
+BatchClient client = new BatchClient(endpoint);
+
+BatchJobSchedule jobSchedule = new BatchJobSchedule();
+Response response = client.ReplaceJobSchedule("<jobScheduleId>", jobSchedule, timeOutInSeconds: 1234, ocpDate: DateTimeOffset.Parse("Tue, 10 May 2022 18:57:31 GMT"));
+]]></code></example>
+    </member>
+    <member name="ReplaceJobScheduleAsync(string,RequestContent,int?,DateTimeOffset?,RequestContext)">
+      <example>
+This sample shows how to call ReplaceJobScheduleAsync.
+<code><![CDATA[
+Uri endpoint = new Uri("<https://my-service.azure.com>");
+BatchClient client = new BatchClient(endpoint);
+
+using RequestContent content = RequestContent.Create(new object());
+Response response = await client.ReplaceJobScheduleAsync("<jobScheduleId>", content);
+
+Console.WriteLine(response.Status);
+]]></code>
+This sample shows how to call ReplaceJobScheduleAsync with all parameters and request content.
+<code><![CDATA[
+Uri endpoint = new Uri("<https://my-service.azure.com>");
+BatchClient client = new BatchClient(endpoint);
+
+using RequestContent content = RequestContent.Create(new object());
+Response response = await client.ReplaceJobScheduleAsync("<jobScheduleId>", content, timeOutInSeconds: 1234, ocpDate: DateTimeOffset.Parse("Tue, 10 May 2022 18:57:31 GMT"));
+
+Console.WriteLine(response.Status);
+]]></code></example>
+    </member>
+    <member name="ReplaceJobSchedule(string,RequestContent,int?,DateTimeOffset?,RequestContext)">
+      <example>
+This sample shows how to call ReplaceJobSchedule.
+<code><![CDATA[
+Uri endpoint = new Uri("<https://my-service.azure.com>");
+BatchClient client = new BatchClient(endpoint);
+
+using RequestContent content = RequestContent.Create(new object());
+Response response = client.ReplaceJobSchedule("<jobScheduleId>", content);
+
+Console.WriteLine(response.Status);
+]]></code>
+This sample shows how to call ReplaceJobSchedule with all parameters and request content.
+<code><![CDATA[
+Uri endpoint = new Uri("<https://my-service.azure.com>");
+BatchClient client = new BatchClient(endpoint);
+
+using RequestContent content = RequestContent.Create(new object());
+Response response = client.ReplaceJobSchedule("<jobScheduleId>", content, timeOutInSeconds: 1234, ocpDate: DateTimeOffset.Parse("Tue, 10 May 2022 18:57:31 GMT"));
+
+Console.WriteLine(response.Status);
+]]></code></example>
+    </member>
+  </members>
+</doc>
