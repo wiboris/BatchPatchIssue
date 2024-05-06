@@ -1,0 +1,10 @@
+emit: [
+  "@azure-tools/typespec-csharp"
+]
+options:
+  "@azure-tools/typespec-autorest":
+    "output-file": "BatchService.json"
+  "@azure-tools/typespec-csharp":
+    clear-output-folder: true
+    model-namespace: false
+    namespace: Azure.Compute.Batch
